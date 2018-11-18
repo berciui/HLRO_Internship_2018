@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Haufe Internship - My Favorite Movies</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../src/css/style.css" media="screen">
+    <link rel="stylesheet" href="../src/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../src/css/carousel.css">
+    <script type="text/javascript" src="../src/js/jquery.slim.min.js"></script>
+    <script type="text/javascript" src="../src/js/popper.min.js"></script>
+    <script type="text/javascript" src="../src/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../src/js/application.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-primary fixed-top">
+            <div class="logo">
+                <div class="">
+                    <a href="https://haufe.de" target="_blank" class=" ">
+                        <img src="../src/img/haufe_logo.png" width="250px" alt="">
+                    </a>
+                </div>
+                <div class="">
+                    <h4 class="">Wellcome to your Haufe Internship</h4>
+                    <p class="">Read bellow to get started</p>
+                </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+    </header>
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="carousel-caption">
+                    <div class="first-column">
+                        <h1>Github</h1>
+                        <ul>
+                            <li><a href="https://help.github.com/articles/set-up-git/" target="_blank">Setup access</a></li>
+                        </ul>
+                    </div>
+                    <div class="second-column">
+                        <h1>Docs</h1>
+                        <ul>
+                            <li><a href="https://git-scm.com/videos" target="_blank">Video Docs</a></li>
+                            <li><a href="https://git-scm.com/book/en/v2" target="_blank">Book</a></li>
+                            <li><a href="https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf"
+                                    target="_blank">Cheat Sheet</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-caption">
+                    <div class="first-column">
+                        <h1>Visual Studio Code</h1>
+                        <ul>
+                            <li><a href="https://code.visualstudio.com/docs/setup/setup-overview" target="_blank">Setup</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=Z5RkLrSDlFA" target="_blank">Extensions Setup
+                                    Video</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-caption">
+                    <div class="first-column">
+                        <h1>Open Movie Database</h1>
+                        <ul>
+                            <li><a href="http://www.omdbapi.com">Start Here</a></li>
+                            <li><a href="http://www.omdbapi.com/apikey.aspx" target="_blank">Register for Free API Key</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-caption search">
+                    <form>
+                        <input class="form-control" type="text" placeholder="Enter movie title..." aria-label="Enter movie title...">
+                        <a class="btn btn-dark" href="#" role="button">Search</a>
+                    </form>
+                    <ul class="list-of-movies">
+                        <div>
+                            <div class="poster">
+                                <img src="https://m.media-amazon.com/images/M/MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"
+                                    alt="Smiley face" width="170" height="142">
+                            </div>
+                            <span class="title">Star Wars: Episode IV - A New Hope</span>
+                            <span class="extra">     -- PG - 1977</span>
+                            <div class="details">
+                                    Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire's world-destroying battle station, while also attempting to rescue Princess Leia from the evil Darth Vader.
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</body>
