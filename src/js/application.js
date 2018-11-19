@@ -1,3 +1,3 @@
-function findMovie(title){
-    alert("Hi There")
+function initEvents(){
+    $(searchMoviesButton).onClick()
 }
