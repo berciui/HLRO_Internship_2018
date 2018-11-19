@@ -18,12 +18,13 @@ body {
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
-  bottom: 13rem;
+  position: absolute;
+  bottom: 9rem;
   text-align: left;
 
 }
 .carousel-caption.search {
-  bottom: 4rem;
+  bottom: 2rem;
 }
 a  {
   color: white;
