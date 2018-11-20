@@ -9,11 +9,14 @@ $(function() {
              }
          }
     );
-    var input= document.getElementById("searchMovieBtn")
-    input.addEventListener("keyup", function(event) {
-        event.preventDefault();
-        if (event.keyCode === 13) {
-            document.getElementById("searchMovieBtn").click();
-  }
-});
-}); 
+    $(document).ready(function(){
+        $('#movieTitleInput').bind("enterKey",function(e){
+          alert($("#movieTitleInput").val());
+        });
+        $('input').keyup(function(e){
+          if(e.keyCode == 13)
+          {
+             $(this).trigger("enterKey");
+          }
+        });
+    })});
