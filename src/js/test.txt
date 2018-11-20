@@ -1,0 +1,16 @@
+var input= document.getElementById("searchMovieBtn")
+    input.addEventListener("keyup", function(event) {
+        event.preventDefault();
+        if (event.keyCode === 13) {
+            document.getElementById("searchMovieBtn").click();
+  }
+});
+
+
+
+
+
+$("#searchMovieBtn").on("click keyup", function (e) {
+    if (e.type == "click" || e.keyCode == 13) {
+        alert("click or enter");
+    }
