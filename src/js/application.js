@@ -1,22 +1,17 @@
-$(function() {
-    $("#searchMovieBtn").click( function()
-         {
-             if($("#movieTitleInput").val()){
-                alert($("#movieTitleInput").val());
-             }
-             else{
-                alert('No value entered for movie title :(');
-             }
-         }
-    );
-    $(document).ready(function(){
-        $('#movieTitleInput').bind("enterKey",function(e){
-          alert($("#movieTitleInput").val());
-        });
-        $('input').keyup(function(e){
-          if(e.keyCode == 13)
-          {
-             $(this).trigger("enterKey");
-          }
-        });
-    })});
+$(function () {
+   $("#searchMovieBtn").click(function () {
+      if ($("#movieTitleInput").val()) {
+         alert($("#movieTitleInput").val());
+      }
+      else {
+         alert('No value entered for movie title :(');
+      }
+   }
+   );
+
+   $( "#movieTitleInput" ).on( "keydown", function(event) {
+      if(event.which == 13){
+         alert($("#movieTitleInput").val());
+      }
+    });
+});

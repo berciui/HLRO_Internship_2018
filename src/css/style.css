@@ -12,3 +12,11 @@
     background-color: #0058ff;
     color: #fff;
 }
+body{
+    background-color: #f0abab;
+    
+}
+.searchContainer{
+    width: 60%; 
+    border:3px solid blue;
+}
