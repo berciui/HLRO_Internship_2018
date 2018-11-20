@@ -16,4 +16,4 @@ $(function() {
             document.getElementById("searchMovieBtn").click();
   }
 });
-});
+}); 
