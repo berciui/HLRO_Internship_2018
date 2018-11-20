@@ -1,11 +1,19 @@
-$('body').on('keypress', 'movieTitleInput', function(e) {
-    if (e.keyCode == 13) {
-        $("#movieTitleInput").click(){
-            alert($("#searchMovieBtn").val());
-        };
-        else {
-            alert('No value entered for movie title :(');
-        }
-        
-    }
+$(function() {
+    $("#searchMovieBtn").click( function()
+         {
+             if($("#movieTitleInput").val()){
+                alert($("#movieTitleInput").val());
+             }
+             else{
+                alert('No value entered for movie title :(');
+             }
+         }
+    );
+    var input= document.getElementById("searchMovieBtn")
+    input.addEventListener("keyup", function(event) {
+        event.preventDefault();
+        if (event.keyCode === 13) {
+            document.getElementById("searchMovieBtn").click();
+  }
+});
 });
