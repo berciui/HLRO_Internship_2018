@@ -18,10 +18,20 @@ body{
 }
 .searchContainer{
     width: 60%; 
-    border:3px solid rgb(255, 123, 0);
+    border:3px solid rgb(218, 116, 21);
+    align-content: center
 }
 div.relative {
     position: relative;
-    left:30px;
-    border:3px solid #000000;
+    left:30cm;
+    border:10cm solid #000000;
+    text-align: center
     }
+.alert-begin{
+    background-color: #7fc50d;
+    width:100%;
+    left:30%;
+    align-items: center;
+    text-align: center;
+    text-decoration: underline dotted red;
+}
