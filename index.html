@@ -5,24 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Movies Search</title>
+    <link rel="stylesheet" href="../src/css/style.css">
     <script type="text/javascript" src="src/js/jquery.slim.min.js"></script>
     <script type="text/javascript" src="src/js/application.js"></script>
-    <style>
-        div.relative {
-        position: relative;
-        left:30px;
-        border:3px solid #000000;
-        }
-    </style>
+    <div class="div.relative"></div>
 </head>
 <body>
-    <div class="relative">
-    <input id="movieTitleInput" class="form-control" type="text" placeholder="Search Movie">   
-    <button id="searchMovieBtn">Search</button>
-    </div></br>
-    <svg width="10000" height="10000">
-        <line x1="0" y1="0" x2="10000" y2="0" 
-        style="stroke:#000000; stroke: width 800"/>
-    </svg>
+    <div class="searchContainer">
+        <input id="movieTitleInput" class="form-control" type="text" placeholder="Search Movie" aria-label="Search Movie">
+        <a id="searchMovieBtn" class="btn btn-dark" href="#" role="button">Search</a>
+        </div><br/>
+        <hr/>
 </body>
 </html>
