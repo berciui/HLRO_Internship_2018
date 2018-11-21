@@ -1,16 +1,25 @@
 $(function () {
     // bind click event on the search button
-    $("#searchMovieBtn").click(function () {
-        let movieTitle = $("#movieTitleInput").val();
-        if (movieTitle) {
-            $.get("http://www.omdbapi.com/?apikey=__API_KEY__&s=" + movieTitle)
-                .done(function (data) {
-                    console.log(data); 
-                });
+    $("#searchMovieBtn").click(handleSearch);
+    $("#movieTitleInput").keydown(function (event) {
+        if (event.which == 13) {
+            event.preventDefault();
+            handleSearch();
         }
-        else {
-            alert('No value entered for movie title :(');
-        }
-    }
-    );
+    });
 });
+
+function handleSearch() {
+    let movieTitle = $("#movieTitleInput").val();
+    if (movieTitle) {
+        $.get("http://www.omdbapi.com/?apikey=11f1895&s=" + movieTitle)
+            .done(function (data) {
+                console.log(data);
+                $("#moviesList").loadTemplate($("#movieItemTemplate"), data.Search, {});
+                $("#moviesList").show();
+            });
+    }
+    else {
+        alert('No value entered for movie title :(');
+    }
+}
