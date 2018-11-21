@@ -15,8 +15,7 @@ function handleSearch() {
         $.get("http://www.omdbapi.com/?apikey=11f1895&s=" + movieTitle)
             .done(function (data) {
                 console.log(data);
-                $("#moviesList").loadTemplate($("#movieItemTemplate"), data.Search, {});
-                $("#moviesList").show();
+                $("#moviesList").loadTemplate("../src/templates/movieItemTemplate.html", data.Search, {});
             });
     }
     else {
