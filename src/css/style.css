@@ -12,8 +12,10 @@
     background-color: #0058ff;
     color: #fff;
 }
-body{
-    background-color: #ffffff;
+.body{
+    background-color: #1711b8;
+    width: 100%;
+    height: 100%;
     
 }
 .searchContainer{
@@ -26,10 +28,21 @@ div.relative {
     right: 100px;
     border: 3px solid #000000;
 }
-.alert-begin{
-    background-color: #5dc01b;
-    width: 40%;
-    left:50%;
-    align-items: center;
-    text-align: center;
+.feedbackContainer{
+    background-color: aqua;
+    width: 100%;
+    height: 100%;
+    border: 4px dotted solid;
+    position: relative;
+    display: block;
+}
+
+.feedbackItem
+{
+    background-color: blueviolet;
+    width: 50%;
+    height: 30%;
+right: 0;
+bottom: 0;
+position: absolute;
 }
