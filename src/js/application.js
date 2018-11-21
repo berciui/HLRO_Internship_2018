@@ -22,4 +22,16 @@ function handleSearch(){
 
 function processMovieListFromServer(data){
     console.log(data);
+    $.each(data.Search, function(movieData){
+        let moviInfo = "<div class=\"card\" style=\"width: 18rem;\">\
+        <img class=\"card-img-top\" src=\"" + movieData.Poster  + "\"\
+            alt=\"Card image cap\">\
+        <div class=\"card-body\">\
+            <h5 class=\"card-title\">" + movieData.Title + "</h5>\
+            <h6>" + movieData.Year +"</h6>\
+            <p class=\"card-text\"></p>\
+            <a href=\"#\" class=\"btn btn-primary\">Go to IMDb</a>\
+        </div>";
+        console.log(moviInfo);
+    });
 }
