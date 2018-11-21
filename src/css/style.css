@@ -35,3 +35,7 @@ div.relative {
     text-align: center;
     text-decoration: underline dotted red;
 }
+.logo{
+    text-align: center;
+    text-decoration: underline overline rgb(218, 21, 175)
+}
