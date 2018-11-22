@@ -18,7 +18,7 @@ body{
 }
 .searchContainer{
     width: 60%; 
-    border:3px solid rgb(218, 116, 21);
+    border:5px solid rgb(218, 21, 175);
     position: relative;
     left: 20%;
 }
@@ -28,13 +28,14 @@ div.relative {
     border:10cm solid #000000;
     text-align: center
     }
-.alert-begin{
-    background-color: #7fc50d;
+.black-title{
+    background-color: rgb(226, 177, 17);
+    color: black;
     width:100%;
     left:30%;
     align-items: center;
     text-align: center;
-    text-decoration: underline dotted green;
+    text-decoration: underline dotted rgb(218, 21, 175);
 }
 .logo{
     text-align: center;
