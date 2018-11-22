@@ -25,6 +25,7 @@ body {
 }
 .carousel-caption.search {
   bottom: 2rem;
+  position: relative;
 }
 a  {
   color: white;
@@ -33,11 +34,27 @@ a  {
 a:hover {
   color: #97cff7;
 }
+.list-of-movies {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 .first-column {
   float: left;
 }
+.movie-details {
+  padding-right: 5px;
+  width: 195px;
+  background-color: black;
+  text-align: center;
+  padding-left: 5px;
+  margin: 1rem;
+}
 .second-column {
   float: right;
+}
+.carousel-inner {
+  overflow: initial;
 }
 .fixed-top {
   top: 40px;
@@ -51,12 +68,12 @@ form {
   padding-bottom: 2rem;
 }
 .form-control {
-  width: 90%;
+  width: 80%;
 }
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 32rem;
+  height: -webkit-fill-available;
   background-color: #1f7d70;
 }
 .carousel-item > img {

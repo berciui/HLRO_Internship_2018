@@ -19,7 +19,8 @@ body{
 .searchContainer{
     width: 60%; 
     border:3px solid rgb(218, 116, 21);
-    align-content: center
+    position: relative;
+    left: 20%;
 }
 div.relative {
     position: relative;
@@ -33,7 +34,7 @@ div.relative {
     left:30%;
     align-items: center;
     text-align: center;
-    text-decoration: underline dotted red;
+    text-decoration: underline dotted green;
 }
 .logo{
     text-align: center;

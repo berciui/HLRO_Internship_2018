@@ -13,10 +13,13 @@ function handleSearch() {
     let movieTitle = $("#movieTitleInput").val();
     if (movieTitle) {
         $.get("http://www.omdbapi.com/?apikey=1c17ad99&s=" + movieTitle)
-            .done(function (data) {
-                console.log(data);
-            });
-    }
+        .done(function (serverResponseToGetRequest) {
+            console.log(serverResponseToGetRequest);
+            let movieListReturnedByServer = serverResponseToGetRequest.Search;
+            console.log(movieListReturnedByServer);
+            $("#moviesList").loadTemplate("src/js/movieItemTemplate.html", movieListReturnedByServer, {});
+        });
+}
     else {
         alert('No value entered for movie title :(');
     }
