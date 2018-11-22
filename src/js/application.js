@@ -13,9 +13,11 @@ function handleSearch() {
     let movieTitle = $("#movieTitleInput").val();
     if (movieTitle) {
         $.get("http://www.omdbapi.com/?apikey=11f1895&s=" + movieTitle)
-            .done(function (data) {
-                console.log(data);
-                $("#moviesList").loadTemplate("../src/templates/movieItemTemplate.html", data.Search, {});
+            .done(function (serverResponseToGetRequest) {
+                console.log(serverResponseToGetRequest);
+                let movieListReturnedByServer = serverResponseToGetRequest.Search;
+                console.log(movieListReturnedByServer);
+                $("#moviesList").loadTemplate("../src/templates/movieItemTemplate.html", movieListReturnedByServer, {});
             });
     }
     else {
