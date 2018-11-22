@@ -11,12 +11,7 @@
     position: relative;
     left: 30%;
 }
-div.relative {
-    position: relative;
-    left: 30px;
-    right: 100px;
-    border: 3px solid #000000;
-}
+
 .feedbackContainer{
     background-color: aqua;
     width: 50%;
@@ -40,9 +35,62 @@ div.relative {
     text-align: center;
     background-color: coral;
 }
-
-
-
+a  {
+    color: white;
+    text-decoration: underline;
+  }
+  a:hover {
+    color: #97cff7;
+  }
+  .list-of-movies {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .first-column {
+    float: left;
+  }
+  .movie-details {
+    padding-right: 5px;
+    width: 195px;
+    background-color: black;
+    text-align: center;
+    padding-left: 5px;
+    margin: 1rem;
+  }
+  .second-column {
+    float: right;
+  }
+  .carousel-inner {
+    overflow: initial;
+  }
+  .fixed-top {
+    top: 40px;
+  }
+  .logo {
+    padding: 20px;
+  
+  }
+  form {
+    display: flex;
+    padding-bottom: 2rem;
+  }
+  .form-control {
+    width: 80%;
+  }
+  /* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: 400;
+}
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+  
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 

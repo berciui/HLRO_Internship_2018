@@ -9,15 +9,17 @@ $(function () {
     });
 });
 
-function handleSearch(){
+function handleSearch() {
     let movieTitle = $("#movieTitleInput").val();
     if (movieTitle) {
-        $.get("http://www.omdbapi.com/?apikey=e373dab5&s=" + movieTitle)
-            .done(function (getData){
-                console.log (getData);
-                $("movieList").loadTemplate("src/js/Template.movie.html", getData.Search, {});
-            });
-    }
+        $.get("http://www.omdbapi.com/?apikey=1c17ad99&s=" + movieTitle)
+        .done(function (serverResponseToGetRequest) {
+            console.log(serverResponseToGetRequest);
+            let movieListReturnedByServer = serverResponseToGetRequest.Search;
+            console.log(movieListReturnedByServer);
+            $("#moviesList").loadTemplate("src/js/movieItemTemplate.html", movieListReturnedByServer, {});
+        });
+}
     else {
         alert('Please enter movie title to search for!');
     }
