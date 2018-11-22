@@ -68,7 +68,7 @@ form {
   padding-bottom: 2rem;
 }
 .form-control {
-  width: 80%;
+  width: 100%;
 }
 
 /* Declare heights because of positioning of img element */

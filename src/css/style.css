@@ -26,7 +26,7 @@ div.relative {
     position: relative;
     left:30cm;
     border:10cm solid #000000;
-    text-align: center
+    text-align: center;
     }
 .black-title{
     background-color: rgb(226, 177, 17);
