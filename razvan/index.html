@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Movies Search</title>
+    <link rel="stylesheet" href="src/css/bootstrap.min.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <script type="text/javascript" src="src/js/jquery.min.js"></script>
+    <script type="text/javascript" src="src/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="src/js/jquery.loadTemplate.min.js"></script>
+    <script type="text/javascript" src="src/js/application.js"></script>
+</head>
+
+
+<body class="body">
+    <h1 class="gigi">
+        <b>FILM ADVISOR</b></h1>
+    <div class="alert alert-danger" role="alert" style="text-align: center">
+        <MARQUEE><i><strong> Welcome!</strong> This site was created for you to easely search for films. Enjoy!</i></MARQUEE>
+    </div><br />
+    <div class="input-group mb-3">
+        <div class="searchContainer">
+            <input id="movieTitleInput" class="form-control" type="text" placeholder="Search Movie" aria-label="Search Movie">
+            <div class="input-group-append">
+                <button id="searchMovieBtn" type="button" class="btn btn-outline-warning">Search</button>
+            </div>
+        </div><br />
+    </div>
+    <hr />
+    <div id="moviesList" class="list-of-movies"></div>
+    <div class=" alert alert-dark feedbackContainer">
+        <div class=" alert alert-dark feedbackItem">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Your Thoughts</span>
+                </div>
+                <textarea class="form-control" aria-label="Your Thoughts"></textarea>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
