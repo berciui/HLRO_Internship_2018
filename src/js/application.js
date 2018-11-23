@@ -17,7 +17,7 @@ function handleSearch() {
                 console.log(serverResponseToGetRequest);
                 let movieListReturnedByServer = serverResponseToGetRequest.Search;
                 console.log(movieListReturnedByServer);
-                $("#moviesList").loadTemplate("../src/templates/movieItemTemplate.html", movieListReturnedByServer, {});
+                $("#moviesList").loadTemplate("src/templates/movieItemTemplate.html", movieListReturnedByServer, {});
             });
     }
     else {
