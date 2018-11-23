@@ -12,7 +12,7 @@ $(function () {
 function handleSearch() {
     let movieTitle = $("#movieTitleInput").val();
     if (movieTitle) {
-        $.get("http://www.omdbapi.com/?apikey=1c17ad99&s=" + movieTitle)
+        $.get("https://www.omdbapi.com/?apikey=1c17ad99&s=" + movieTitle)
         .done(function (serverResponseToGetRequest) {
             console.log(serverResponseToGetRequest);
             let movieListReturnedByServer = serverResponseToGetRequest.Search;
