@@ -1,0 +1,43 @@
+.c-logocontainer {
+    z-index: 10;
+    display: flex;
+    width: 180px;
+    height: 80px;
+    margin-right: 12px;
+    padding: 16px 24px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #0058ff;
+    color: #fff;
+}
+body{
+    background-color: #d9f00b;
+    
+}
+.searchContainer{
+    width: 60%; 
+    border:5px solid rgb(218, 21, 175);
+    position: relative;
+    left: 20%;
+}
+div.relative {
+    position: relative;
+    left:30cm;
+    border:10cm solid #000000;
+    text-align: center;
+    }
+.black-title{
+    background-color: rgb(226, 177, 17);
+    color: black;
+    width:100%;
+    left:30%;
+    align-items: center;
+    text-align: center;
+    text-decoration: underline dotted rgb(218, 21, 175);
+}
+.logo{
+    text-align: center;
+    text-decoration: underline overline rgb(218, 21, 175)
+}
